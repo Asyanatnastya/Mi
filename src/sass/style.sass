@@ -1,0 +1,175 @@
+@import helpers/vars
+@import helpers/mixins
+  
+html
+    font-size: 1px
+
+body
+    font-size: 14rem
+    font-family: "Maven Pro"
+
+.wrapper 
+    display: flex
+    justify-content: space-between
+    width: 95%
+    max-width: 1820px
+    margin: 0 auto
+
+.main
+        display: flex
+        flex-direction: column
+        align-items: center
+        height: 770px
+        padding-top: 118px
+        // padding-left: 510px
+        // height: 1149px
+        background-color: #f9fafc
+
+    
+.main__divider 
+    display: flex 
+    align-items: center 
+
+    span 
+        font-size: 14px
+        line-height: 32px
+        letter-spacing: 1px
+        text-transform: uppercase
+        font-weight: 700
+        color: #9fa4af
+        margin: 0 10px 
+    .line 
+        width: 24px 
+        height: 1px 
+        background-color: #6e45e2 
+
+.main__title 
+            height: 31px
+            font-size: 60px
+            letter-spacing: -2px
+            line-height: 72px
+            margin: 10px
+            color: #4f4f6f
+            font-weight: 500
+            font-family: "Maven Pro"
+
+.main__description
+    width: 394px
+    font-size: 15px
+    line-height: 27px
+    margin: 35px
+    color: #9fa4af
+    font-weight: 400
+    font-family: "Maven Pro"
+    text-align: center
+
+.main__plans 
+    display: flex
+    justify-content: flex-start
+    margin-left: 249px
+    margin-right: 249px
+
+    .plan 
+      width: 240px
+      height: 448px
+      border-radius: 30px
+      background-color: #ffffff
+      border: 1px solid #d7dbe8
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 20px
+      margin-right: 48px
+
+    .plan:hover
+        filter: drop-shadow(0 0 46px rgba(204,204,223,0.71))
+
+    .plan__icon img 
+        width: 100px
+        margin-bottom: 20px
+    .plan__details 
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 20px
+.plan__type
+    font-size: 14px
+    letter-spacing: 1px
+    line-height: 32px
+    text-transform: uppercase
+    color: #9fa4af
+    font-weight: 700
+    font-family: "Maven Pro"
+
+.plan__price 
+          font-size: 24px
+          font-weight: bold
+          color: #4f4f6f
+          margin-bottom: 10px
+          display: flex
+          align-items: baseline
+
+.plan__price--dollar 
+    // font-size: 24px
+    // margin-right: 5px
+    font-size: 16px
+    vertical-align: super
+
+.plan__description 
+    color: #9fa4af
+    text-align: center
+    font-size: 16px
+    line-height: 28px
+    font-weight: 400
+    font-family: "Maven Pro"
+
+.plan__button 
+        width: 150px
+        height: 40px
+        font-size: 12px
+        border-radius: 25px
+        filter: drop-shadow(0 0 10.5px rgba(204, 204, 223, 0.5))
+        text-transform: uppercase
+        color: #c2c9db
+        background-color: #ffffff
+        border: 1px solid #d7dbe8
+        cursor: pointer
+        font-weight: 700
+        font-family: "Maven Pro"
+        margin: 10px
+.plan__button:hover 
+          background-color: #6e45e2
+          color: #ffffff
+
+// .plan__button--highlighted 
+//           background-color: #6e45e2
+//           color: #ffffff
+.section  
+        text-align: center
+        height: 324px
+        padding-bottom: 119px
+        background: linear-gradient(-60deg, rgba(135, 211, 205, 0), rgba(109, 69, 225, 1)), url("../img/maps.png") no-repeat center
+
+.section__title
+    padding-top: 130px
+
+.section__text
+    font-size: 14px
+    letter-spacing: 1px
+    line-height: 32px
+    text-transform: uppercase
+    color: #ffffff
+    font-weight: 700
+    font-family: "Maven Pro"
+
+.section__text-title
+    font-size: 60px
+    line-height: 72px
+    color: #ffffff
+    font-weight: 500
+    font-family: "Maven Pro"
+
+        
+    
+@import  components/header
+@import  components/footer

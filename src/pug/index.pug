@@ -1,0 +1,42 @@
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/styles.css")
+        title Misocial
+    body 
+        include helpers/vars.pug
+        include helpers/mixins.pug
+
+                
+    
+        include components/header.pug
+
+
+    main.main
+        .main__divider
+            .line
+            span MISOCIAL
+            .line
+        h2.main__title Select a Plan
+        p.main__description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+        .main__plans
+            +plan('img/1_card.png', 'Personal', '0/month', 'Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris. Ea commodo consequat.')
+            +plan('img/2_card.png', 'Personal', '29/month', 'Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris. Ea commodo consequat.', true)
+            +plan('img/3_card.png', 'Personal', '49/month', 'Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris. Ea commodo consequat.')
+    section.section
+        .section__title
+            h3.section__text SOCAL MARKETING & ANALYTICS
+            h1.section__text-title Take control of your data
+        +button('Select Plan', highlighted)
+        +button('explore features')
+
+
+
+
+
+        include components/footer.pug
+
+        

@@ -1,0 +1,35 @@
+mixin nav ()
+    nav.navigation
+        .wrapper
+            a.navigation__logo(href="index.html")  
+                img.navigation__logo-img(src="img/logo.png", alt="логотип")
+                h2.navigation__logo-text Misocial 
+            ul.navigation__menu
+                li.navigation__item
+                    a.navigation__link(href="#") Home
+                li.navigation__item
+                    a.navigation__link(href="#")  Why MISOCIAL 
+                li.navigation__item
+                    a.navigation__link(href="#") Features
+                li.navigation__item
+                    a.navigation__link(href="#") Articles
+                li.navigation__item
+                    a.navigation__link(href="#") Pricing
+                li.navigation__item
+                    a.navigation__link.navigation__link--bordered(href="#") Get started
+    
+
+mixin plan(icon, type, price, description, highlighted=false)
+    .plan
+      .plan__icon
+        img(src=icon, alt=type)
+      .plan__details
+        .plan__type= type
+        .plan__price
+          span.plan__price--dollar $
+          = price
+        p.plan__description= description
+      +button('Select Plan', highlighted)
+
+mixin button(text, highlighted=false)
+    button.plan__button(class=highlighted ? 'plan__button--highlighted' : '')= text
