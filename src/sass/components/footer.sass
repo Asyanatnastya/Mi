@@ -7,9 +7,9 @@
         text-decoration: none
 
 .footer__logo-img
-        width: 48px
-        height: 48px
-        margin: 10px
+        width: 47px
+        height: 47px
+        margin: 9px
 
 .footer__logo-text 
     font-size: 22px
@@ -31,11 +31,29 @@
 
 .footer__link:hover
     color: #6d45e1
-   
+    // text-decoration: underline
 
 .footer__link
     text-decoration: none
     color:#6a6a77
+    display: inline-block
+    position: relative
+    padding: 5px 0
+
+.footer__link::after 
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 50%
+        width: 0
+        height: 2px
+        background-color: currentColor
+        transition: width 0.3s, left 0.3s
+        transform: translateX(-50%)
+
+.footer__link:hover::after 
+        width: 80px
+        left: 50%
 
 
 .footer__link--bordered 

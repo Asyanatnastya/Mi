@@ -10,15 +10,25 @@
         text-decoration: none
 
 .navigation__logo-img
-        width: 48px
-        height: 48px
-        margin: 10px
+        width: 47px
+        height: 47px
+        margin: 9px
 
 .navigation__logo-text 
     font-size: 22px
     letter-spacing: 3px
     color: #fff
     font-weight: 700
+
+// .burger 
+//       display: none 
+//       flex-direction: column 
+//       cursor: pointer 
+// .burger__line 
+//       width: 25px 
+//       height: 2px 
+//       background-color: #fff 
+//       margin: 4px 0 
 
 .navigation__menu
     display: flex
@@ -36,10 +46,31 @@
 .navigation__link
     text-decoration: none
     color:#fff
+    display: inline-block
+    position: relative
+    padding: 5px 0
 
+.navigation__link::after 
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 50%
+        width: 0
+        height: 2px
+        background-color: currentColor
+        transition: width 0.3s, left 0.3s
+        transform: translateX(-50%)
+
+// .navigation__link:hover::after 
+//         width: 80px
+//         left: 50%
+
+.navigation__link:not(.navigation__link--bordered):hover::after 
+      width: 80px
+      left: 50%
 
 .navigation__link--bordered 
-        padding: 10px 10px
+        padding: 1px 10px
         border: 2px solid #fff 
         border-radius: 25px 
 
