@@ -3,7 +3,8 @@
     padding-bottom: 47px
     width: 1120px
     height: 570px
-    background: linear-gradient(-60deg, rgba(135, 211, 205, 0), rgba(109, 69, 225, 1)), url("../img/galery.jpg") no-repeat center 
+    background: linear-gradient(-60deg, rgba(135, 211, 205,0.6%) 0%, rgba(109, 69, 225,0.6) 100%), url("../img/galery.jpg") no-repeat center
+    background-size: cover 
 
 .navigation__logo
         display: flex
@@ -123,30 +124,15 @@
     border-radius: 32px
     background-color: #ffffff
     margin: 70px auto 0
+    cursor: pointer
     position: relative
     filter: drop-shadow(0 0 10.5px rgba(204, 204, 223, 0.5))
 
-.header__circle::before 
-    content: ''
-    display: block
-    width: 0
-    height: 0
-    /* border-left: 2px solid transparent; */
-    border-right: 1px solid #9fa4af
-    border-top: 17px solid #9fa4af
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-
-
-
-    
-
-
-
-    
-
-
-
-   
+.icon-arrow 
+      fill:  #9fa4af 
+      width: 32px 
+      height: 32px 
+      position: absolute 
+      top: 50% 
+      left: 50% 
+      transform: translate(-50%, -50%) 
