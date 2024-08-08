@@ -1,29 +1,49 @@
 .footer 
-    height: 202px
     padding-top: 50px
 
     .footer__logo
         display: flex
         text-decoration: none
+        +media(600)
+            justify-content: center
+        +media(425)
+            justify-content: center
+            
 
 .footer__logo-img
         width: 47px
         height: 47px
         margin: 9px
 
+
 .footer__logo-text 
     font-size: 22px
     letter-spacing: 3px
     color: #37374a
-    font-weight: 700
+    font-weight: 700  
 
 .footer__menu
     display: flex
     align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
     list-style: none
     font-size: 12px
-    letter-spacing: 1px
+    // letter-spacing: 1px
     line-height: 32px
+    +media(600)
+    display: none
+    +media(768)
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: space-between
+        list-style: none
+        font-size: 12px
+        line-height: 32px
+    +media(1024)
+        font-size: 15px
+
 
 
 .footer__item 
@@ -72,10 +92,11 @@ a.footer__link--bordered:hover
         margin: 30px  auto
 
 .border__text
-            padding-top: 33px
-            padding-right: 320px  
+            padding-top: 33px 
             margin: auto 
             color: #bdbdc2
+            +media(1024)
+                margin-left: 10px
 
 .border__title
     font-size: 14px
