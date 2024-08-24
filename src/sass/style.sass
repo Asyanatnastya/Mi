@@ -9,7 +9,7 @@ body
     font-family: "Maven Pro"
     margin: 0
 
-.wrapper 
+.wrapper-flex
     max-width: 1820px
     margin: 0 auto
     padding: 0 10px
@@ -23,9 +23,9 @@ body
         justify-content: space-between
         max-width: 1370px
         margin: 0 auto
-        padding: 0
+        padding: 10px
     +media(1440)
-        max-width: 1370px
+        max-width: 1870px
 
 
 .main
@@ -90,7 +90,7 @@ body
         padding: 70px
         display: flex
     +media(768)
-        padding: 80px 80px
+        padding: 80px
         display: flex
         flex-wrap: wrap
     // +media(1024)
@@ -102,11 +102,14 @@ body
       display: flex
       flex-direction: column
       align-items: center
-      padding: 70px
+      padding: 50px
+      position: relative
+      margin-bottom: 50px
       +media(768)
         width: 50%
       +media(1024)
         width: 14%
+
 
     .plan:hover
         filter: drop-shadow(0 0 46px rgba(204,204,223,0.71))
@@ -120,6 +123,7 @@ body
         flex-direction: column
         align-items: center
         margin-bottom: 20px
+
 .plan__type
     font-size: 14px
     letter-spacing: 1px
@@ -130,20 +134,25 @@ body
     font-family: "Maven Pro"
 
 .plan__price 
-          font-size: 33px
-          font-weight: bold
-          color: #4f4f6f
-          margin-top: 10px
-          margin-bottom: 10px
+    position: relative
+    font-size: 18px
+    font-weight: bold
+    color: #4f4f6f
+    margin-top: 10px
+    margin-bottom: 10px
+          
 
 .plan__price--dollar 
-    // font-size: 24px
-    // margin-right: 5px
     font-size: 16px
-    vertical-align: super
-
+    position: absolute
+    top: 9px
+    left: -14px
 .prices 
     font-size: 50px
+    letter-spacing: -2px
+    font-weight: 500
+
+    
 
 .plan__description 
     color: #9fa4af
@@ -166,8 +175,13 @@ body
         font-weight: 700
         font-family: "Maven Pro"
         margin: 10px
-        +media(600)
-        padding: 10px
+        padding: 10px 10px
+        +media(1440)
+            padding: 18px 10px
+            width: 190px
+            
+            
+
         
 .plan__button:hover 
           background-color: #6e45e2
@@ -204,7 +218,8 @@ body
     +media(1440)
         font-size: 80px
 
-
+.hidden
+    display: none
         
     
 @import  components/header

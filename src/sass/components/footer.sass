@@ -6,6 +6,9 @@
         text-decoration: none
         +media(600)
             justify-content: center
+            padding-left: 20px
+        +media(320)
+            justify-content: center
         +media(425)
             justify-content: center
             
@@ -71,20 +74,27 @@
         transition: width 0.3s, left 0.3s
         transform: translateX(-50%)
 
-.footer__link:hover::after 
-        width: 80px
-        left: 50%
+// .footer__link:hover::after 
+//         width: 80px
+//         left: 50%
 
 
 .footer__link--bordered 
     padding: 10px 10px
     border: 2px solid  #6d45e1
+    background-color: #6d45e1
+    color: #fff
     border-radius: 25px
     text-decoration: none
 
-a.footer__link--bordered:hover
-        background-color: #6d45e1
-        color: #fff
+.footer__link--bordered:hover
+    border: 2px solid  #005eff
+    background-color: #005eff
+    color: #ffea00
+    text-decoration: none
+
+
+
 .border 
         width: calc(100% - 100px) 
         height: 1px 
@@ -105,7 +115,7 @@ a.footer__link--bordered:hover
     font-weight: 500
     font-family: "Maven Pro"
 .icon
-        fill:  #b4b4bb
+        fill: #b4b4bb
         width: 25px 
         height: 25px 
         margin: 40px 10px 0 0
