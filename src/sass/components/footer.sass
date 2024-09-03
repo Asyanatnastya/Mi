@@ -46,6 +46,7 @@
         line-height: 32px
     +media(1024)
         font-size: 15px
+        padding-right: 20px
 
 
 
@@ -105,8 +106,15 @@
             padding-top: 33px 
             margin: auto 
             color: #bdbdc2
+            +media(425)
+                text-align: center
             +media(1024)
                 margin-left: 10px
+                display: flex
+                justify-content: space-between
+            +media(1440)
+                display: flex
+                justify-content: space-between
 
 .border__title
     font-size: 14px
@@ -121,5 +129,13 @@
         margin: 40px 10px 0 0
         line-height: 19px
         font-family: "Font Awesome"
-
+        +media(1024)
+            margin: 2px
+            padding: 5px
+        +media(1440)
+            margin: 0
+            padding: 5px
+.svg
+    +media(320)
+        text-align: center
 
